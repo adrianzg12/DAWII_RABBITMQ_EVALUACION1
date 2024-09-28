@@ -10,6 +10,6 @@ public class RabbitMQConsumer {
 
     @RabbitListener(queues = "queue")
     public void consumirMensaje(String mensaje){
-        log.info("Mensaje recibido" + mensaje + "inicio de operación");
+        log.info("Mensaje recibido"+mensaje+"Enviando a la web");
     }
 }
