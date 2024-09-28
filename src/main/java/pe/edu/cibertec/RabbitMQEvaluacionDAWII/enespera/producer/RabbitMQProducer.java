@@ -15,6 +15,6 @@ public class RabbitMQProducer {
 
     public void enviarMensaje(String mensaje) {
         rabbitTemplate.convertAndSend(EXCHANGE, ROUTING_KEY, mensaje);
-        log.info("Mensaje enviado correctamente a RabbitMQ" + mensaje);
+        log.info("El mensaje ha sido enviado correctamente hacia RabbitMQ" + mensaje);
     }
 }
